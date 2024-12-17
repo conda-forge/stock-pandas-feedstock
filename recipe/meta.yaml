@@ -1,4 +1,4 @@
-{% set version = "1.4.5" %}
+{% set version = "1.4.6" %}
 
 package:
   name: stock-pandas
@@ -6,13 +6,13 @@ package:
 
 source:
   url: https://github.com/kaelzhang/stock-pandas/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ec8f3c97fe4a1b60541fc3b059f8fcfa1c288669b0a9e6e8eb27730dac9c4e01
+  sha256: 1fa97ffd7dfc352679f929d0d84d001c65efa65b80edcdf0893b617fb11d2053
 
 build:
-  skip: True  # [py<39]
+  skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
-  - STOCK_PANDAS_BUILDING_EXT=1
+    - STOCK_PANDAS_BUILDING_EXT=1
   number: 0
 
 requirements:
