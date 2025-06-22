@@ -1,4 +1,4 @@
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 package:
   name: stock-pandas
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/kaelzhang/stock-pandas/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 2c36528425a0fa7d6ad3cac47ed5d8cdadc4a3c9ccb9fa2ac8b8bb277db7a335
+  sha256: e56af08a4a8f4c7dcd15ea65bc87c9c264ebdcec0b62f9c9a27f30c94f16963f
 
 build:
   skip: true  # [py<39]
